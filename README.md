@@ -6,4 +6,4 @@
 2.新建index.html
 
 ## 如何预览
-点击xxxxx
+点击https://songyutong.github.io/20180619/ 即可预览
