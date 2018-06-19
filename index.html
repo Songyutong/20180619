@@ -1,5 +1,43 @@
 <!DOCTYPE html>
 <html>
-<title>我的第一个人页面</title>
-这是内容,这下你相信了吧。
+<head>
+  <meta charset="utf-8">
+  <title>桐桐的博客</title>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js">
+</script>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+  body{
+    padding: 15px;
+  }
+  img{
+    max-width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <div id="content">
+# 我的第一篇博客
+    
+**宋雨桐**
+    
+> 不要相信别人。 —— 鲁迅
+
+大家好，我今天学会Markdown了。
+
+<img src="http://att2.citysbs.com/hangzhou/2014/09/03/21/middle_520x780-211516_11581409750116150_feeabbf1a4ff11672c3c5459214d9a53.jpg">
+
+[百度](http://baidu.com)
+  </div>
+
+  <script> 
+    var content = document.getElementById('content')
+    var markdown = content.innerHTML
+    var html = marked(markdown)
+    content.innerHTML = html
+
+  </script>
+      
+</body>
 </html>
